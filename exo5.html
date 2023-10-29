@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button onclick="aff()">Afficher films</button>
+    <button onclick="ajouter()">Ajouter un film</button>
+    <button onclick="supp()">Supprimer</button>
+
+    <script>
+        let film= [
+            {
+                titre: "Harry Potter et les reliques de la mort",
+                annee: 2011,
+                writer: "JK Rowling",
+                note: 10
+            },
+            {
+                titre: "Harry Potter a l'ecole de sorcier",
+                annee: 2001,
+                writer: "JK Rowling",
+                note: 10
+            },
+            {
+                titre: "Harry Potter et la chambre des secrets",
+                annee: 2002,
+                writer: "JK Rowling",
+                note: 10
+            }
+
+        ];
+
+        function ajouter(){
+            let film2 = {titre: "Harry Potter et la coupe de feu",
+                annee: 2004,
+                writer: "JK Rowling",
+                note: 10};
+
+            film.push(film2);
+
+        }
+        function supp(){
+                film.splice(0,1)
+        }
+        function aff()
+        {
+            for(i=0;i<=2;i++)
+        {
+            console.log(film[i]);
+        }
+        }
+    </script>
+</body>
+</html>

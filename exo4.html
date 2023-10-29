@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button onclick="deliberer()">Deliberer</button>
+    <script>
+        let etudiant = [
+           {
+            nom:'john',
+            prenom: 'doe',
+            matricule:1000,
+            note:14,
+            assiduite:5
+           }, 
+           {
+            nom:'bob',
+            prenom: 'carlton',
+            matricule:2000,
+            note:7,
+            assiduite:1
+           }, 
+           {
+            nom:'rayane',
+            prenom: 'smith',
+            matricule:3000,
+            note:13,
+            assiduite:3
+           }];
+
+           function estadmissible(etudiant)
+           {
+            if(etudiant.note+etudiant.assiduite>=10)
+            {
+                console.log("admissible");
+            }
+            else{
+                console.log("ajournee");
+            }
+           }
+
+           function deliberer()
+           {
+            for(i=0;i<=2;i++)
+            {
+                estadmissible(etudiant[i]);
+            }
+           }
+    </script>
+</body>
+</html>

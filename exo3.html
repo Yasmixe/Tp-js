@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <button onclick="ouvrirtableau()">tableau etudiants</button>
+        <button onclick="ouvrirobjet()">objet etudiant</button>
+        <button onclick="ouvrirtabobj()">tableau d'objets etudiants</button>
+    </div>
+    <script>
+        let etudiantstab = ["etudiant1", "etudiant2", "etudiant3"];
+        let etudiantobjet = {
+            nom:'john',
+            prenom: 'doe',
+            age:30
+    };
+    let etudiant = [
+           {
+            nom:'john',
+            prenom: 'doe',
+            age:30
+           }, 
+           {
+            nom:'hanafi',
+            prenom: 'yasmine',
+            age:22
+           }, 
+           {
+            nom:'hanafi',
+            prenom: 'racim',
+            age:26
+           }
+    ];
+
+    function ouvrirtableau(){
+        for(i=0;i<=2;i++)
+        {
+            console.log(etudiantstab[i]);
+        }
+    }
+    function ouvrirobjet(){
+        console.log(etudiantobjet);
+    }
+    function ouvrirtabobj(){
+        for(i=0;i<=2;i++)
+        {
+            console.log(etudiant[i]);
+        }
+        
+    }
+    </script>
+</body>
+</html>
